@@ -15,7 +15,7 @@ const renderText = (text, className, baseWeight = 400) => {
       className={className}
       style={{ fontVariationSettings: `'wght' ${baseWeight}` }}
     >
-      {char === " " ? "\u000A" : char}
+      {char === " " ? "\u00A0" : char}
 
     </span>
   ))
@@ -40,7 +40,7 @@ const setupTextHover = (container, type) => {
     letters.forEach((letter) => {
       const { left: l, width: w } = letter.getBoundingClientRect();
       const distance = Math.abs(mouseX - (l - left + w / 2));
-      const intensity = Math.exp(-(distance ** 2) / 2000);
+      const intensity = Math.exp(-(distance ** 2) / 5000);
 
       animateLetter(letter, min + (max - min) * intensity);
     });
@@ -50,17 +50,19 @@ const setupTextHover = (container, type) => {
     letters.forEach((letter) => animateLetter(letter, base, 0.3));
 
   container.addEventListener("mousemove", handleMouseMove);
-  container.addEventListener("mouseleave", handleMouseMove);
+  container.addEventListener("mouseleave", handleMouseLeave);
 
   return () => {
-    container.addEventListener("mousemove", handleMouseMove);
-    container.addEventListener("mouseleave", handleMouseMove);
+    container.removeEventListener("mousemove", handleMouseMove);
+    container.removeEventListener("mouseleave", handleMouseLeave);
 
   }
 
 };
 
 const Welcome = () => {
+  const titleRef = useRef(null);
+  const subTitleRef = useRef(null);
 
   useGSAP(() => {
     const titleCleanup = setupTextHover(titleRef.current, "title");
@@ -71,8 +73,7 @@ const Welcome = () => {
       titleCleanup(); 
     }
   })
-  const titleRef = useRef(null);
-  const subTitleRef = useRef(null);
+
   return (
     <section id='welcome'>
       <p ref={subTitleRef}>
@@ -83,6 +84,10 @@ const Welcome = () => {
           'text-9xl italic font-georama'
         )}
       </h1>
+
+      <div className="small-screen">
+        <p>This portfolio is designed for desktop/tablet screens only.</p>
+      </div>
     </section>
   )
 }
