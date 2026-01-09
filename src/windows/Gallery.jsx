@@ -4,7 +4,15 @@ import { gallery, photosLinks } from "#constants";
 import useWindowStore from "#store/window";
 
 const Gallery = () => {
-    const { windows } = useWindowStore();
+    const { windows, openWindow } = useWindowStore();
+    
+    const handleImageClick = (item) => {
+        openWindow('imgfile', {
+            id: item.id,
+            name: `Gallery Image ${item.id}`,
+            imageUrl: item.img
+        });
+    };
 
     return (
         <>
@@ -36,6 +44,7 @@ const Gallery = () => {
                         {gallery.map((item) => (
                             <div
                                 key={item.id}
+                                onClick={() => handleImageClick(item)}
                                 className="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
                             >
                                 <img
