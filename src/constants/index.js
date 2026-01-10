@@ -42,12 +42,12 @@ const dockApps = [
     icon: "finder.png",
     canOpen: true,
   },
-  {
-    id: "safari",
-    name: "Articles", // was "Safari"
-    icon: "safari.png",
-    canOpen: true,
-  },
+  // {
+  //   id: "safari",
+  //   name: "Articles", // was "Safari"
+  //   icon: "safari.png",
+  //   canOpen: true,
+  // },
   {
     id: "photos",
     name: "Gallery", // was "Photos"
@@ -132,7 +132,7 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/billybean93",
   },
   {
     id: 2,
@@ -153,7 +153,8 @@ const socials = [
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "www.linkedin.com/in/đức-anh-nguyễn-09967815a"
+
   },
 ];
 
@@ -225,7 +226,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Nau Coffee Popup Website",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -233,44 +234,55 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Nau.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "This is a project I made to help my friends who need a professional website to be featured in their local news!",
+            "Nau Coffee is a modern Next.js 16 web application built with React 19, TypeScript, and Tailwind CSS v4.",
+            "Featuring smooth scroll animations via Lenis, Framer Motion transitions.",
+            "This site showcases Vietnamese coffee culture through a responsive, performant, and accessible user experience deployed via Netlify.",
+            
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "nau-coffee.netlify.app",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://nau-coffee.netlify.app/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "nau.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
+          imageUrl: "/images/nau1.png",
         },
         {
           id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
+          name: "nau-menu.png",
+          icon: "/images/image.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
+          fileType: "img",
+          position: "top-20 right-80",
+          imageUrl: "/images/nau-menu.png",
+        },
+
+          {
+            id: 5,
+            name: "nau-popups.png",
+            icon: "/images/image.png",
+            kind: "file",
+            fileType: "img",
+            position: "top-50 right-15",
+            imageUrl: "/images/nau-popups.png",
         },
       ],
     },
@@ -397,7 +409,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/images/billy.jpeg",
     },
     {
       id: 2,
@@ -406,16 +418,16 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      imageUrl: "/images/casual-me.jpeg",
     },
     {
       id: 3,
-      name: "conference-me.png",
+      name: "mc-me.png",
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/mc-me.jpeg",
     },
     {
       id: 4,
@@ -425,12 +437,12 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/billy.jpeg",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hey, I'm Billy! 👋 I'm a developer with a broad interest in how things work.",
+        "I've spent my time building across platforms: crafting mobile experiences, designing responsive web apps, and even experimenting with bare-metal OS development.",
+        "I thrive on versatility and the challenge of picking up new tools.",
+        "When I’m not at my keyboard, I’m out meeting new people and sharing stories—usually at a cafe with a slightly too expensive latte.",
       ],
     },
   ],
