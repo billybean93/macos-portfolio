@@ -114,7 +114,7 @@ const techStack = [
   },
   {
     category: "Backend",
-    items: ["Next.js", "Spring Boot"],
+    items: ["Next.js"],
   },
   {
     category: "Database",
@@ -134,26 +134,13 @@ const socials = [
     bg: "#f4656b",
     link: "https://github.com/billybean93",
   },
+
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
-  {
-    id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
-  },
-  {
-    id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "www.linkedin.com/in/đức-anh-nguyễn-09967815a"
+    link: "https://www.linkedin.com/in/đức-anh-nguyễn-09967815a"
 
   },
 ];
@@ -290,7 +277,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "ITINERIA Travel Planner",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -298,44 +285,63 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "ITINERIA.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "ITINERIA is a comprehensive travel app designed to simplify planning through a map-integrated itinerary builder.",
+            "Users can create detailed schedules enriched with notes and photos, while social sharing features enable collaborative planning.",
+            "By centralizing travel details, the app ensures users remain organized, connected, and stress-free throughout their journey.",
+            "The app also has home screen widgets! AND calls OpenAI API to run its AI assisstant chatbox!",
+            "This is my first experience working with iOS and it has been a pleasure learning SwiftUI designing something useful! ",
           ],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
-          icon: "/images/safari.png",
+          name: "ITINERIA.github",
+          icon: "/images/github.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://github.com/billybean93/Itineria",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "itineria-icon.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
-          imageUrl: "/images/project-2.png",
+          imageUrl: "/images/itineria-icon.png",
         },
         {
           id: 5,
           name: "Design.fig",
-          icon: "/images/plain.png",
+          icon: "/images/figma.png",
           kind: "file",
           fileType: "fig",
-          href: "https://google.com",
+          href: "https://www.figma.com/design/N2yovaok9L6B7kQxfZ9L0g/iPhone-Engineering-Prototype-Design?node-id=0-1&p=f",
           position: "top-60 left-5",
+        },
+        {
+          id: 6,
+          name: "ITINERIA-home.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-60 left-50",
+          imageUrl: "/images/itineria-home.png",
+        },
+        {
+          id: 6,
+          name: "ITINERIA-home1.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-10 left-50",
+          imageUrl: "/images/itineria-home1.png",
         },
       ],
     },
