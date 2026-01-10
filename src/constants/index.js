@@ -176,20 +176,37 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/billy.jpeg",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/flappy-bird.png",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/terminal-bare.png",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/nau-menu.png",
   },
+  {
+    id: 5,
+    img: "/images/mc-me.jpeg",
+  },
+   {
+    id: 6,
+    img: "/images/itineria-home.png",
+  },
+   {
+    id: 7,
+    img: "/images/itineria-home1.png",
+  },
+  {
+    id: 8,
+    img: "/images/itineria-icon.png",
+  },
+
 ];
 
 export {
@@ -217,7 +234,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      windowPosition: "top-[5vh] left-200", // optional: Finder window position
       children: [
         {
           id: 1,
@@ -258,12 +275,12 @@ const WORK_LOCATION = {
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
-          position: "top-20 right-80",
+          position: "top-20 right-70",
           imageUrl: "/images/nau-menu.png",
         },
 
-          {
-            id: 5,
+        {
+            id: 6,
             name: "nau-popups.png",
             icon: "/images/image.png",
             kind: "file",
@@ -281,7 +298,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
-      windowPosition: "top-[20vh] left-7",
+      windowPosition: "top-[30vh] left-350",
       children: [
         {
           id: 1,
@@ -300,7 +317,7 @@ const WORK_LOCATION = {
         },
         {
           id: 2,
-          name: "ITINERIA.github",
+          name: "ITINERIA.git",
           icon: "/images/github.png",
           kind: "file",
           fileType: "url",
@@ -335,7 +352,7 @@ const WORK_LOCATION = {
           imageUrl: "/images/itineria-home.png",
         },
         {
-          id: 6,
+          id: 7,
           name: "ITINERIA-home1.png",
           icon: "/images/image.png",
           kind: "file",
@@ -349,52 +366,61 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "Bare Metal Programming",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
-      windowPosition: "top-[33vh] left-7",
+      windowPosition: "top-[33vh] left-150",
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "Bare Metal.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            "We built an educational bare-metal OS for Raspberry Pi to host a real-time Flappy Bird game.",
+            "Bypassing Linux entirely, we developed the necessary low-level drivers for serial communication and graphics rendering.",
+            "The final application demonstrates full-stack embedded competency: using mailbox property interfaces for hardware configuration, architectural timers for physics synchronization, and double-buffering to maintain high-performance visuals and responsive gameplay.",
+            "This is one of the most enjoyable projects I have done as I got the chance to collab with others and explore low-level programming!"
           ],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "flappy-bird-demo.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://www.youtube.com/watch?v=X53Bgt_SvOk",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "flappy.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
+          imageUrl: "/images/flappy-bird.png",
         },
         {
           id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
+          name: "bare-metal.git",
+          icon: "/images/github.png",
           kind: "file",
           fileType: "fig",
-          href: "https://google.com",
+          href: "https://github.com/billybean93/Bare-Metal-Programming",
           position: "top-60 right-20",
+        },
+        {
+          id: 6,
+          name: "bare-metal-terminal.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-20 right-70",
+          imageUrl: "/images/terminal-bare.png",
         },
       ],
     },
